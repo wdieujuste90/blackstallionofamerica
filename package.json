@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://wdieujuste90.github.io/blackstallionofamerica",
   "dependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
