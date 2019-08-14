@@ -2,6 +2,9 @@ import React from 'react';
 import Header from './components/global/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import Image1 from './assets/images/teenspaint.jpg';
+import Image2 from './assets/images/teens.jpg';
+import Image3 from './assets/images/kidshands.jpg';
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +17,12 @@ function App() {
               className="d-block w-100"
               src={Image1}
               alt="First slide"
+            />
+            <img
+              height={600}
+              className="d-block w-100"
+              src={Image2}
+              alt="Second slide"
             />
             <Carousel.Caption>
               <h3>First slide label</h3>
