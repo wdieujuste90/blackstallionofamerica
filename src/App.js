@@ -18,6 +18,13 @@ function App() {
               src={Image1}
               alt="First slide"
             />
+            <Carousel.Caption>
+              <h3>Our Mission</h3>
+              <p>Nurturing kids into selfless, yet, well balanced adults</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
             <img
               height={600}
               className="d-block w-100"
@@ -25,55 +32,69 @@ function App() {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Our Vision</h3>
+              <p>Educate our community at large about bullying and cyber bullying</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              height={600}
+              className="d-block w-100"
+              src={Image3}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Our Goal</h3>
+              <p>Create advocacy opportunities on issues of bullying and cyberbullying</p>
             </Carousel.Caption>
           </Carousel.Item>
 
         </Carousel>
 
-      </header>
+      </header >
 
-      {/* Services */}
-      <section className="page-section" id="services">
+      {/* Black Stallion */}
+      < section className="page-section" id="History" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Services</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h2 className="section-heading text-uppercase">Black Stallion of America Corp.</h2>
+              <h3 className="section-subheading text-muted">Established 2018</h3>
             </div>
           </div>
           <div className="row text-center">
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                <i className="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                <i className="fas fa-id-badge fa-stack-1x fa-inverse"></i>
+                
               </span>
-              <h4 className="service-heading">E-Commerce</h4>
-              <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <h4 className="service-heading">Local Law Enforcement</h4>
+              <p className="text-muted">Partnering with our local Law Enforcement officials to help continue establishing awareness of anti-bullying</p>
             </div>
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                <i className="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                <i className="fas fa-child fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 className="service-heading">Responsive Design</h4>
-              <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <h4 className="service-heading">Boys and Girls Club of America</h4>
+              <p className="text-muted">Currently establishing relationship with the Boys and Girls Club of America and educate the youth about anti-bullying awareness</p>
             </div>
             <div className="col-md-4">
               <span className="fa-stack fa-4x">
                 <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                <i className="fas fa-lock fa-stack-1x fa-inverse"></i>
+                <i className="fas fa-hands fa-stack-1x fa-inverse"></i>
               </span>
-              <h4 className="service-heading">Web Security</h4>
-              <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              <h4 className="service-heading">Networking</h4>
+              <p className="text-muted">Organized a gala in July 2019 to introduce Black Stallion of America</p>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Portfoio */}
-      <section className="bg-light page-section" id="portfolio">
+      < section className="bg-light page-section" id="portfolio" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -168,10 +189,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* About */}
-      <section className="page-section" id="about">
+      < section className="page-section" id="about" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -249,10 +270,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Team */}
-      <section className="bg-light page-section" id="team">
+      < section className="bg-light page-section" id="team" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -340,10 +361,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Clients */}
-      <section className="py-5">
+      < section className="py-5" >
         <div className="container">
           <div className="row">
             <div className="col-md-3 col-sm-6">
@@ -368,10 +389,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Contact */}
-      <section className="page-section" id="contact">
+      < section className="page-section" id="contact" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -413,10 +434,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
-      <footer className="footer">
+      < footer className="footer" >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4">
@@ -453,7 +474,7 @@ function App() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer >
 
       {/* Portfolio Modals */}
 
@@ -660,7 +681,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
