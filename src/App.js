@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './components/global/Header';
 import Carousel from 'react-bootstrap/Carousel';
-import Image1 from './assets/images/teenspaint.jpg';
-import Image2 from './assets/images/teens.jpg';
-import Image3 from './assets/images/kidshands.jpg';
+import Image1 from './assets/images/group-of-black-students.jpg';
+import Image2 from './assets/images/bailey.jpg';
+import Image3 from './assets/images/afroteensphone.jpg';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
         <Carousel>
           <Carousel.Item>
             <img
-              height={600}
+              height={625}
+              width={100}
               className="d-block w-100"
               src={Image1}
               alt="First slide"
@@ -26,7 +27,7 @@ function App() {
 
           <Carousel.Item>
             <img
-              height={600}
+              height={625}
               className="d-block w-100"
               src={Image2}
               alt="Second slide"
@@ -39,7 +40,7 @@ function App() {
 
           <Carousel.Item>
             <img
-              height={600}
+              height={625}
               className="d-block w-100"
               src={Image3}
               alt="Third slide"
