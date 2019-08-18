@@ -1,23 +1,25 @@
 import React from 'react';
-import Header from './components/global/Header';
 import Carousel from 'react-bootstrap/Carousel';
+
+import Image from './components/common/Image';
+import Navbar from './components/global/Navbar';
 import Image1 from './assets/images/group-of-black-students.jpg';
 import Image2 from './assets/images/bailey.jpg';
 import Image3 from './assets/images/afroteensphone.jpg';
 
+const CarouselImageHeight = 625;
+
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <header className="masthead">
         <Carousel>
           <Carousel.Item>
-            <img
-              height={625}
-              width={100}
+            <Image
+              height={CarouselImageHeight}
               className="d-block w-100"
               src={Image1}
-              alt="First slide"
             />
             <Carousel.Caption>
               <h3>Our Mission</h3>
@@ -26,11 +28,10 @@ function App() {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img
-              height={625}
+            <Image
+              height={CarouselImageHeight}
               className="d-block w-100"
               src={Image2}
-              alt="Second slide"
             />
             <Carousel.Caption>
               <h3>Our Vision</h3>
@@ -39,11 +40,10 @@ function App() {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img
-              height={625}
+            <Image
+              height={CarouselImageHeight}
               className="d-block w-100"
               src={Image3}
-              alt="Third slide"
             />
             <Carousel.Caption>
               <h3>Our Goal</h3>
@@ -53,14 +53,85 @@ function App() {
 
         </Carousel>
 
-      </header >
+      </header>
 
       {/* Black Stallion */}
-      < section className="page-section" id="History" >
+      <section className="page-section" id="history">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Black Stallion of America Corp.</h2>
+              <h2 className="section-heading text-uppercase">Black Stallion of America</h2>
+              <h3 className="section-subheading text-muted">Established 2018</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <ul className="timeline">
+                <li>
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/1.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">We nurture kids into selfless, well-balanced adults</h4>
+                    </div>
+                  </div>
+                </li>
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/2.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">Teaching and educating the community about bullying, cyberbullying and how to prevent it</h4>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">Transition to Full Service</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt="" />
+                  </div>
+                  <div className="timeline-panel">
+                    <div className="timeline-heading">
+                      <h4 className="subheading">Phase Two Expansion</h4>
+                    </div>
+                    <div className="timeline-body">
+                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                  </div>
+                </li>
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <h4>Be Part
+                  <br />Of Our
+                  <br />Story!</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Black Stallion */}
+      <section className="page-section" id="history">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="section-heading text-uppercase">Black Stallion of America</h2>
               <h3 className="section-subheading text-muted">Established 2018</h3>
             </div>
           </div>
@@ -69,7 +140,7 @@ function App() {
               <span className="fa-stack fa-4x">
                 <i className="fas fa-circle fa-stack-2x text-primary"></i>
                 <i className="fas fa-id-badge fa-stack-1x fa-inverse"></i>
-                
+
               </span>
               <h4 className="service-heading">Local Law Enforcement</h4>
               <p className="text-muted">Partnering with our local Law Enforcement officials to help continue establishing awareness of anti-bullying</p>
@@ -92,10 +163,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Portfoio */}
-      < section className="bg-light page-section" id="portfolio" >
+      <section className="bg-light page-section" id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -190,10 +261,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* About */}
-      < section className="page-section" id="about" >
+      <section className="page-section" id="about">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -271,10 +342,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Team */}
-      < section className="bg-light page-section" id="team" >
+      <section className="bg-light page-section" id="team">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -362,10 +433,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Clients */}
-      < section className="py-5" >
+      <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-md-3 col-sm-6">
@@ -390,10 +461,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Contact */}
-      < section className="page-section" id="contact" >
+      <section className="page-section" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -435,10 +506,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Footer */}
-      < footer className="footer" >
+      <footer className="footer">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4">
@@ -475,7 +546,7 @@ function App() {
             </div>
           </div>
         </div>
-      </footer >
+      </footer>
 
       {/* Portfolio Modals */}
 
@@ -504,7 +575,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -538,7 +610,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -572,7 +645,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -606,7 +680,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -640,7 +715,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -674,7 +750,8 @@ function App() {
                     </ul>
                     <button className="btn btn-primary" data-dismiss="modal" type="button">
                       <i className="fas fa-times"></i>
-                      Close Project</button>
+                      Close Project
+                    </button>
                   </div>
                 </div>
               </div>
@@ -682,7 +759,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
