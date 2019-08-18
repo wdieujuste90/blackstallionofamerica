@@ -135,7 +135,7 @@ export default () => (
               <i className="fas fa-id-badge fa-stack-1x fa-inverse"></i>
 
             </span>
-            <h4 className="service-heading">Local Law Enforcement</h4>
+            <h4 className="service-heading">Law Enforcement</h4>
             <p className="text-muted">Partnering with our local Law Enforcement officials to help continue establishing awareness of anti-bullying</p>
           </div>
           <div className="col-md-4">
@@ -143,8 +143,8 @@ export default () => (
               <i className="fas fa-circle fa-stack-2x text-primary"></i>
               <i className="fas fa-child fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 className="service-heading">Boys and Girls Club of America</h4>
-            <p className="text-muted">Currently establishing relationship with the Boys and Girls Club of America and educate the youth about anti-bullying awareness</p>
+            <h4 className="service-heading">National Organizations of local chapters</h4>
+            <p className="text-muted">Currently establishing a relationship with national organization of local chapters which provides after-school youth programs and educate the youth about anti-bullying awareness</p>
           </div>
           <div className="col-md-4">
             <span className="fa-stack fa-4x">
@@ -152,7 +152,7 @@ export default () => (
               <i className="fas fa-hands fa-stack-1x fa-inverse"></i>
             </span>
             <h4 className="service-heading">Networking</h4>
-            <p className="text-muted">Organized a gala in July 2019 to introduce Black Stallion of America</p>
+            <p className="text-muted">Organized a gala in July 2019 to introduce Black Stallion of America Corp</p>
           </div>
         </div>
       </div>
