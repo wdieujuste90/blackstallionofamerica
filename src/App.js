@@ -59,7 +59,7 @@ export default () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="section-heading text-uppercase">Black Stallion of America</h2>
+            <h2 className="section-heading text-uppercase">Black Stallion of America Corp</h2>
             <h3 className="section-subheading text-muted">Established 2018</h3>
           </div>
         </div>
@@ -124,8 +124,8 @@ export default () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="section-heading text-uppercase">Black Stallion of America</h2>
-            <h3 className="section-subheading text-muted">Established 2018</h3>
+            <h2 className="section-heading text-uppercase">Our Community</h2>
+            <h3 className="section-subheading text-muted"></h3>
           </div>
         </div>
         <div className="row text-center">
