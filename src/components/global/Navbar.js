@@ -22,7 +22,7 @@ export default () => (
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#Community">Community</a>
+                        <a className="nav-link js-scroll-trigger" href="#community">Community</a>
                     </li>
 
                     <li className="nav-item">
