@@ -7,8 +7,7 @@ import Image1 from './assets/images/group-of-black-students.jpg';
 import Image2 from './assets/images/bailey.jpg';
 import Image3 from './assets/images/afroteensphone.jpg';
 
-const CarouselImageHeight = 625;
-const CarouselImageMaxHeight = 650;
+const CarouselImageHeight = 1200;
 
 const carouselData = [
   {
@@ -30,8 +29,7 @@ export default () => {
     return (
       <Carousel.Item>
         <Image
-          minHeight={CarouselImageHeight}
-          maxHeight={CarouselImageMaxHeight}
+          height={CarouselImageHeight}
           className="d-block w-100"
           src={item.image}
          />
