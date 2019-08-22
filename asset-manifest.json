@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/blackstallionofamerica/static/css/main.2cce8147.chunk.css",
-    "main.js": "/blackstallionofamerica/static/js/main.343e82d1.chunk.js",
-    "main.js.map": "/blackstallionofamerica/static/js/main.343e82d1.chunk.js.map",
+    "main.js": "/blackstallionofamerica/static/js/main.1496f540.chunk.js",
+    "main.js.map": "/blackstallionofamerica/static/js/main.1496f540.chunk.js.map",
     "runtime~main.js": "/blackstallionofamerica/static/js/runtime~main.02767610.js",
     "runtime~main.js.map": "/blackstallionofamerica/static/js/runtime~main.02767610.js.map",
-    "static/js/2.f45c6999.chunk.js": "/blackstallionofamerica/static/js/2.f45c6999.chunk.js",
-    "static/js/2.f45c6999.chunk.js.map": "/blackstallionofamerica/static/js/2.f45c6999.chunk.js.map",
+    "static/js/2.39130a94.chunk.js": "/blackstallionofamerica/static/js/2.39130a94.chunk.js",
+    "static/js/2.39130a94.chunk.js.map": "/blackstallionofamerica/static/js/2.39130a94.chunk.js.map",
     "index.html": "/blackstallionofamerica/index.html",
-    "precache-manifest.9287c9359b0d1196fdbd8f77a2f37b98.js": "/blackstallionofamerica/precache-manifest.9287c9359b0d1196fdbd8f77a2f37b98.js",
+    "precache-manifest.a5f14e7e5eaf0245cbc1baae1527a604.js": "/blackstallionofamerica/precache-manifest.a5f14e7e5eaf0245cbc1baae1527a604.js",
     "service-worker.js": "/blackstallionofamerica/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/blackstallionofamerica/static/css/main.2cce8147.chunk.css.map",
-    "static/media/afroteensphone.jpg": "/blackstallionofamerica/static/media/afroteensphone.86b47d71.jpg",
-    "static/media/bailey.jpg": "/blackstallionofamerica/static/media/bailey.0d87aa5a.jpg",
-    "static/media/group-of-black-students.jpg": "/blackstallionofamerica/static/media/group-of-black-students.5696504a.jpg",
+    "static/media/afroteensphone.jpg": "/blackstallionofamerica/static/media/afroteensphone.51e53ac9.jpg",
+    "static/media/bailey.jpg": "/blackstallionofamerica/static/media/bailey.70af3d4e.jpg",
+    "static/media/group-of-black-students.jpg": "/blackstallionofamerica/static/media/group-of-black-students.fb95a918.jpg",
     "static/media/stallionlogo.png": "/blackstallionofamerica/static/media/stallionlogo.dd776a25.png"
   }
 }
