@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/blackstallionofamerica/static/css/main.2cce8147.chunk.css",
-    "main.js": "/blackstallionofamerica/static/js/main.3cbbe267.chunk.js",
-    "main.js.map": "/blackstallionofamerica/static/js/main.3cbbe267.chunk.js.map",
+    "main.js": "/blackstallionofamerica/static/js/main.343e82d1.chunk.js",
+    "main.js.map": "/blackstallionofamerica/static/js/main.343e82d1.chunk.js.map",
     "runtime~main.js": "/blackstallionofamerica/static/js/runtime~main.02767610.js",
     "runtime~main.js.map": "/blackstallionofamerica/static/js/runtime~main.02767610.js.map",
-    "static/js/2.b41502e9.chunk.js": "/blackstallionofamerica/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/blackstallionofamerica/static/js/2.b41502e9.chunk.js.map",
+    "static/js/2.f45c6999.chunk.js": "/blackstallionofamerica/static/js/2.f45c6999.chunk.js",
+    "static/js/2.f45c6999.chunk.js.map": "/blackstallionofamerica/static/js/2.f45c6999.chunk.js.map",
     "index.html": "/blackstallionofamerica/index.html",
-    "precache-manifest.130a6669a6b2b790868ef8bca3980e1e.js": "/blackstallionofamerica/precache-manifest.130a6669a6b2b790868ef8bca3980e1e.js",
+    "precache-manifest.9287c9359b0d1196fdbd8f77a2f37b98.js": "/blackstallionofamerica/precache-manifest.9287c9359b0d1196fdbd8f77a2f37b98.js",
     "service-worker.js": "/blackstallionofamerica/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/blackstallionofamerica/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/blackstallionofamerica/static/media/logo.5d5d9eef.svg"
+    "static/media/afroteensphone.jpg": "/blackstallionofamerica/static/media/afroteensphone.86b47d71.jpg",
+    "static/media/bailey.jpg": "/blackstallionofamerica/static/media/bailey.0d87aa5a.jpg",
+    "static/media/group-of-black-students.jpg": "/blackstallionofamerica/static/media/group-of-black-students.5696504a.jpg",
+    "static/media/stallionlogo.png": "/blackstallionofamerica/static/media/stallionlogo.dd776a25.png"
   }
 }
