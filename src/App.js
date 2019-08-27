@@ -9,6 +9,7 @@ import Image3 from './assets/images/afroteensphone.jpg';
 
 const CarouselImageHeight = 1200;
 
+
 const carouselData = [
   {
     image: Image1,
@@ -30,7 +31,7 @@ export default () => {
       <Carousel.Item>
         <Image
           height={CarouselImageHeight}
-          className="d-block w-100"
+          className="d-block w-100 img-fluid"
           src={item.image}
          />
         <Carousel.Caption>

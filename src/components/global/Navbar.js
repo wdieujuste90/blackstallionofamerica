@@ -5,10 +5,10 @@ import Image from '../common/Image';
 
 
 export default () => (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top className-fluid" id="mainNav">
         <div className="container">
             <a className="navbar-brand js-scroll-trigger" href="#page-top">
-                <Image width={175} src={Logo} />
+                <Image width={145} src={Logo} />
             </a>
 
             <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
