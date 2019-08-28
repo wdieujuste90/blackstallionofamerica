@@ -26,17 +26,17 @@ const carouselData = [
 ];
 
 export default () => {
-  const carouselItems = carouselData.map(item => {
+  const carouselItems = carouselData.map((item, i) => {
     return (
-      <Carousel.Item>
+      <Carousel.Item key={`carousel-${i}`}>
         <Image
           height={CarouselImageHeight}
           className="d-block w-100 img-fluid"
           src={item.image}
          />
         <Carousel.Caption>
-          <h3>{item.caption.header}</h3>
-          <p>{item.caption.body}</p>
+          <h3 className="carousel-caption-header">{item.caption.header}</h3>
+          <p className="carousel-caption-body">{item.caption.body}</p>
         </Carousel.Caption>
       </Carousel.Item>
     );
@@ -46,9 +46,9 @@ export default () => {
     <div className="App">
       <Navbar />
       <header className="masthead">
-          <Carousel>
-            {carouselItems}
-          </Carousel>
+        <Carousel id="carousel-header">
+          {carouselItems}
+        </Carousel>
       </header>
 
       {/* Black Stallion */}
