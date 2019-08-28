@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b261ed2520d12466379ede5347d84b0",
+    "revision": "dfffaee5333e4bff53916a2990be4f7e",
     "url": "/blackstallionofamerica/index.html"
   },
   {
-    "revision": "fe10975a6eb74bd48355",
+    "revision": "ad3e3ac018aadc863dcb",
     "url": "/blackstallionofamerica/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blackstallionofamerica/static/js/2.39130a94.chunk.js"
   },
   {
-    "revision": "fe10975a6eb74bd48355",
-    "url": "/blackstallionofamerica/static/js/main.e5e991ee.chunk.js"
+    "revision": "ad3e3ac018aadc863dcb",
+    "url": "/blackstallionofamerica/static/js/main.f493365c.chunk.js"
   },
   {
     "revision": "4bd2e8fab7e3b78c8996",
