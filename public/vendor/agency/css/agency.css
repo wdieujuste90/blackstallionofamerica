@@ -173,6 +173,7 @@ img::-moz-selection {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
   }
@@ -219,12 +220,16 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 300px) {
+  #mainNav .navbar-brand img {
+    width: 100px;
+  }
+
   header.masthead {
     margin-top: 90px;
   }
 
   .carousel-caption-header {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .carousel-caption-body {
@@ -233,6 +238,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+  #mainNav .navbar-brand img {
+    width: 115px;
+  }
+
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -556,6 +565,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 992px) {
+  #mainNav .navbar-brand img {
+    width: 145px;
+  }
+
   header.masthead {
     margin-top: 0px;
   }
