@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../../assets/images/stallionlogo.png';
-import '../../styles/App.css';
 import Image from '../common/Image';
 
 

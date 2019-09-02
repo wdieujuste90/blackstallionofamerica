@@ -1,11 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
+import './styles/App.css';
 import Image from './components/common/Image';
 import Navbar from './components/global/Navbar';
-import Image1 from './assets/images/group-of-black-students.jpg';
-import Image2 from './assets/images/bailey.jpg';
-import Image3 from './assets/images/afroteensphone.jpg';
+import Image1 from './assets/images/teenheadphones.jpg';
+import Image2 from './assets/images/teenslooking.jpg';
+import Image3 from './assets/images/bestfriends.jpg';
 
 const CarouselImageHeight = 1200;
 
@@ -28,13 +29,13 @@ const carouselData = [
 export default () => {
   const carouselItems = carouselData.map((item, i) => {
     return (
-      <Carousel.Item key={`carousel-${i}`}>
+      <Carousel.Item key={`carousel-${i}`} >
         <Image
           height={CarouselImageHeight}
           className="d-block w-100 img-fluid"
           src={item.image}
          />
-        <Carousel.Caption>
+        <Carousel.Caption className="bg-black my-carousel-caption">
           <h3 className="carousel-caption-header">{item.caption.header}</h3>
           <p className="carousel-caption-body">{item.caption.body}</p>
         </Carousel.Caption>
