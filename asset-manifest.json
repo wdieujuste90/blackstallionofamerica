@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/blackstallionofamerica/static/css/main.1c6d56a6.chunk.css",
-    "main.js": "/blackstallionofamerica/static/js/main.3a1843e8.chunk.js",
-    "main.js.map": "/blackstallionofamerica/static/js/main.3a1843e8.chunk.js.map",
+    "main.js": "/blackstallionofamerica/static/js/main.ff8b6526.chunk.js",
+    "main.js.map": "/blackstallionofamerica/static/js/main.ff8b6526.chunk.js.map",
     "runtime~main.js": "/blackstallionofamerica/static/js/runtime~main.02767610.js",
     "runtime~main.js.map": "/blackstallionofamerica/static/js/runtime~main.02767610.js.map",
-    "static/js/2.39130a94.chunk.js": "/blackstallionofamerica/static/js/2.39130a94.chunk.js",
-    "static/js/2.39130a94.chunk.js.map": "/blackstallionofamerica/static/js/2.39130a94.chunk.js.map",
+    "static/js/2.a5fe8c54.chunk.js": "/blackstallionofamerica/static/js/2.a5fe8c54.chunk.js",
+    "static/js/2.a5fe8c54.chunk.js.map": "/blackstallionofamerica/static/js/2.a5fe8c54.chunk.js.map",
     "index.html": "/blackstallionofamerica/index.html",
-    "precache-manifest.ef6c6511274ff110c4c095e8698d1b7f.js": "/blackstallionofamerica/precache-manifest.ef6c6511274ff110c4c095e8698d1b7f.js",
+    "precache-manifest.9848edfa8aaabe7f9ef12fba8599f176.js": "/blackstallionofamerica/precache-manifest.9848edfa8aaabe7f9ef12fba8599f176.js",
     "service-worker.js": "/blackstallionofamerica/service-worker.js",
     "static/css/main.1c6d56a6.chunk.css.map": "/blackstallionofamerica/static/css/main.1c6d56a6.chunk.css.map",
     "static/media/bestfriends.jpg": "/blackstallionofamerica/static/media/bestfriends.ed358c6b.jpg",
+    "static/media/communityhands.jpg": "/blackstallionofamerica/static/media/communityhands.27f7c4fe.jpg",
+    "static/media/kidsuit.jpg": "/blackstallionofamerica/static/media/kidsuit.2ed33b95.jpg",
     "static/media/stallionlogo.png": "/blackstallionofamerica/static/media/stallionlogo.dd776a25.png",
+    "static/media/teacher.jpg": "/blackstallionofamerica/static/media/teacher.214652fd.jpg",
     "static/media/teenheadphones.jpg": "/blackstallionofamerica/static/media/teenheadphones.7ce9b418.jpg",
+    "static/media/teens.jpg": "/blackstallionofamerica/static/media/teens.dae7692d.jpg",
     "static/media/teenslooking.jpg": "/blackstallionofamerica/static/media/teenslooking.59db78f4.jpg"
   }
 }
