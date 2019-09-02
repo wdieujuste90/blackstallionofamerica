@@ -4,24 +4,29 @@ import Carousel from 'react-bootstrap/Carousel';
 import './styles/App.css';
 import Image from './components/common/Image';
 import Navbar from './components/global/Navbar';
-import Image1 from './assets/images/teenheadphones.jpg';
-import Image2 from './assets/images/teenslooking.jpg';
-import Image3 from './assets/images/bestfriends.jpg';
+import CarouselImage1 from './assets/images/teenheadphones.jpg';
+import CarouselImage2 from './assets/images/teenslooking.jpg';
+import CarouselImage3 from './assets/images/bestfriends.jpg';
+
+import AboutImage1 from './assets/images/kidsuit.jpg';
+import AboutImage2 from './assets/images/teacher.jpg';
+import AboutImage3 from './assets/images/communityhands.jpg';
+import AboutImage4 from './assets/images/teens.jpg';
 
 const CarouselImageHeight = 1200;
 
 
 const carouselData = [
   {
-    image: Image1,
+    image: CarouselImage1,
     caption: { header: "Our Mission", body: "Nurturing kids into selfless, yet, well balanced adults", }
   },
   {
-    image: Image2,
+    image: CarouselImage2,
     caption: { header: "Our Vision", body: "Educate our community at large about bullying and cyber bullying" },
   },
   {
-    image: Image3,
+    image: CarouselImage3,
     caption: { header: "Our Goal", body: "Create advocacy opportunities on issues of bullying and cyberbullying" },
   },
 ];
@@ -66,7 +71,7 @@ export default () => {
               <ul className="timeline">
                 <li>
                   <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/1.jpg" alt="" />
+                    <img className="rounded-circle img-fluid" src={AboutImage1} alt="" />
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -76,7 +81,7 @@ export default () => {
                 </li>
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/2.jpg" alt="" />
+                    <img className="rounded-circle img-fluid" src={AboutImage2} alt="" />
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -86,7 +91,7 @@ export default () => {
                 </li>
                 <li>
                   <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="" />
+                    <img className="rounded-circle img-fluid" src={AboutImage3} alt="" />
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -96,7 +101,7 @@ export default () => {
                 </li>
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt="" />
+                    <img className="rounded-circle img-fluid" src={AboutImage4} alt="" />
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
