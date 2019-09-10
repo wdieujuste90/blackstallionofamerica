@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/blackstallionofamerica/precache-manifest.e9f62025ce3678ae8d15da3b58835fe5.js"
+  "/blackstallionofamerica/precache-manifest.d38f70e629acae23cf510074d021d372.js"
 );
 
 self.addEventListener('message', (event) => {
