@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Gallery from 'react-photo-gallery';
-import ReactCarousel, { Modal, ModalGateway } from "react-images";
+
 
 import './styles/App.css';
 import Image from './components/common/Image';
@@ -16,7 +15,7 @@ import AboutImage3 from './assets/images/communityhands.jpg';
 import AboutImage4 from './assets/images/teens.jpg';
 
 import galleryEventPhotos from './assets/images/events';
-
+import jacques1 from './assets/images/events/jacques1.jpg';
 const CarouselImageHeight = 1200;
 
 // const galleryEventPhotos = EventImages.map(image => ({
@@ -62,7 +61,7 @@ export default () => {
           height={CarouselImageHeight}
           className="d-block w-100 img-fluid"
           src={item.image}
-         />
+        />
         <Carousel.Caption className="bg-black my-carousel-caption">
           <h3 className="carousel-caption-header">{item.caption.header}</h3>
           <p className="carousel-caption-body">{item.caption.body}</p>
@@ -194,26 +193,27 @@ export default () => {
             </div>
           </div>
         </div>
+        <div className="container">
           <div className="row">
-            <div className="col-md-12 col-sm-6">
-              <Gallery photos={galleryEventPhotos} onClick={openLightbox} />
-              <ModalGateway>
-                {viewerIsOpen ? (
-                  <Modal onClose={closeLightbox}>
-                    <ReactCarousel
-                      currentIndex={currentImage}
-                      views={galleryEventPhotos.map(x => ({
-                        ...x,
-                        srcset: x.srcSet,
-                        caption: x.title
-                      }))}
-                    />
-                  </Modal>
-                ) : null}
-              </ModalGateway>
+            <div className="col-md-4 col-sm-6">
+              <img height={300} alt="" className="rounded" src={jacques1}></img>
+            </div>
+            <div className="col-md-8 col-sm-6">
+              <h4 className="text-muted text-left">Black Stallion Launch Gala July 2019</h4>
+              <p className="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
+        </div>
+
       </section>
+
+
+
+
+
+
+
+
 
       {/* Team */}
       <section className="bg-light page-section" id="team">

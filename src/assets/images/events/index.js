@@ -15,7 +15,6 @@ import group3 from './group3.jpg';
 import group4 from './group4.jpg';
 import group5 from './group5.jpg';
 import group6 from './group6.jpg';
-import index from './index.js';
 import jacques1 from './jacques1.jpg';
 import jacques2 from './jacques2.jpg';
 import jacques3 from './jacques3.jpg';
@@ -137,12 +136,7 @@ const images = [
         width: 2,
         height: 2,
     },
-    {
-        src: index,
-        width: 2,
-        height: 2,
-    },
-    {
+    {    
         src: jacques1,
         width: 2,
         height: 2,
