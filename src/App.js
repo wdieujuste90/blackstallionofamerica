@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import ReactBnbGallery from 'react-bnb-gallery'
 
 
 import './styles/App.css';
@@ -14,7 +15,7 @@ import AboutImage2 from './assets/images/teacher.jpg';
 import AboutImage3 from './assets/images/communityhands.jpg';
 import AboutImage4 from './assets/images/teens.jpg';
 
-import galleryEventPhotos from './assets/images/events';
+import galaPhotos from './assets/images/events';
 import jacques1 from './assets/images/events/jacques1.jpg';
 const CarouselImageHeight = 1200;
 
@@ -43,6 +44,7 @@ const carouselData = [
 export default () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
@@ -189,7 +191,6 @@ export default () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase">Events</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
           </div>
         </div>
@@ -199,7 +200,7 @@ export default () => {
               <img height={300} alt="" className="rounded" src={jacques1}></img>
             </div>
             <div className="col-md-8 col-sm-6">
-              <h4 className="text-muted text-left">Black Stallion Launch Gala - July 2019</h4>
+              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h4 className="text-muted text-left">Black Stallion Launch Gala - July 2019</h4></a>
               <p className="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
@@ -207,13 +208,10 @@ export default () => {
 
       </section>
 
-
-
-
-
-
-
-
+      <ReactBnbGallery
+        show={showGallery}
+        photos={galaPhotos}
+        onClose={() => setShowGallery(!showGallery)} />
 
       {/* Team */}
       <section className="bg-light page-section" id="team">
