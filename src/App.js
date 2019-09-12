@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import ReactBnbGallery from 'react-bnb-gallery'
 
@@ -42,19 +42,7 @@ const carouselData = [
 ];
 
 export default () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
 
   const carouselItems = carouselData.map((item, i) => {
     return (
@@ -152,7 +140,7 @@ export default () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase">Our Community</h2>
-              <h3 className="section-subheading text-muted"></h3>
+              <br/>
             </div>
           </div>
           <div className="row text-center">
@@ -194,7 +182,7 @@ export default () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div style={{marginTop: 10 }} className="container">
           <div className="row">
             <div className="col-md-4 col-sm-6">
               <img height={300} alt="" className="rounded" src={jacques1}></img>
@@ -304,34 +292,6 @@ export default () => {
         </div>
       </section>
 
-      {/* Clients */}
-      <section className="py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3 col-sm-6">
-              <a href="#">
-                <img className="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="" />
-              </a>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <a href="#">
-                <img className="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="" />
-              </a>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <a href="#">
-                <img className="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="" />
-              </a>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <a href="#">
-                <img className="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section className="page-section" id="contact">
         <div className="container">
@@ -417,217 +377,6 @@ export default () => {
         </div>
       </footer>
 
-      {/* Portfolio Modals */}
-
-      {/* Modal 1 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Threads</li>
-                      <li>Category: Illustration</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal 2 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Explore</li>
-                      <li>Category: Graphic Design</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal 3 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal3" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Finish</li>
-                      <li>Category: Identity</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal 4 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal4" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Lines</li>
-                      <li>Category: Branding</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal 5 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal5" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Southwest</li>
-                      <li>Category: Website Design</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Modal 6 */}
-      <div className="portfolio-modal modal fade" id="portfolioModal6" tabIndex="-1" role="dialog" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="close-modal" data-dismiss="modal">
-              <div className="lr">
-                <div className="rl"></div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 mx-auto">
-                  <div className="modal-body">
-                    {/* Project Details Go Here */}
-                    <h2 className="text-uppercase">Project Name</h2>
-                    <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                    <img className="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="" />
-                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                    <ul className="list-inline">
-                      <li>Date: January 2017</li>
-                      <li>Client: Window</li>
-                      <li>Category: Photography</li>
-                    </ul>
-                    <button className="btn btn-primary" data-dismiss="modal" type="button">
-                      <i className="fas fa-times"></i>
-                      Close Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
