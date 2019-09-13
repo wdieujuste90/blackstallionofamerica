@@ -188,8 +188,8 @@ export default () => {
               <img height={300} alt="" className="rounded" src={jacques1}></img>
             </div>
             <div className="col-md-8 col-sm-6">
-              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h4 className="text-muted text-left">Black Stallion Launch Gala - July 2019</h4></a>
-              <p className="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h5 className="text-muted text-left">Black Stallion of America Corp Launch Gala - July 2019</h5></a>
+              <p className="text-left">Check out our Black Stallion of America Corp Gala pictures where we launched our non-for-profit organization and introduce our vision to friends, family and the community!</p>
             </div>
           </div>
         </div>
@@ -214,8 +214,8 @@ export default () => {
             <div className="col-sm-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt="" />
-                <h4>Kay Garland</h4>
-                <p className="text-muted">Lead Designer</p>
+                <h6>Gracia Martin Pierre-Pierre</h6>
+                <p className="text-muted">President</p>
                 <ul className="list-inline social-buttons">
                   <li className="list-inline-item">
                     <a href="#">
@@ -238,8 +238,8 @@ export default () => {
             <div className="col-sm-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="img/team/2.jpg" alt="" />
-                <h4>Larry Parker</h4>
-                <p className="text-muted">Lead Marketer</p>
+                <h6>Michel Celestin</h6>
+                <p className="text-muted">Vice President</p>
                 <ul className="list-inline social-buttons">
                   <li className="list-inline-item">
                     <a href="#">
@@ -262,8 +262,8 @@ export default () => {
             <div className="col-sm-4">
               <div className="team-member">
                 <img className="mx-auto rounded-circle" src="img/team/3.jpg" alt="" />
-                <h4>Diana Pertersen</h4>
-                <p className="text-muted">Lead Developer</p>
+                <h6>Sophie Chery Pierre Pierre</h6>
+                <p className="text-muted">Treasury and Marketing</p>
                 <ul className="list-inline social-buttons">
                   <li className="list-inline-item">
                     <a href="#">
