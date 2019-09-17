@@ -28,9 +28,6 @@ export default () => (
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#team">Our Team</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
-                    </li>
                 </ul>
             </div>
         </div>
