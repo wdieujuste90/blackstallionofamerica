@@ -94,6 +94,11 @@ const renderTeam = () => {
         facebook: 'https://www.facebook.com/jacques.pierrepierre',
       },
       image: TeamImage3,
+      bio: ["Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believed that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
+      "He also is a loving husband that loves and cherishes his wife over everything else in life. A concerned father that is loving his kids into well-adjusted adults. An attentive son that is making sure that his parents know how much he loves them and is appreciative of all the sacrifices that they made so he could have the best chances at succeeding in life.",
+      "A man of integrity, of character that believes that kids are the future of a nation and that it is unacceptable to lose them to suicide due to depression brought about by bullying.",
+      "Finally but not the least, Dr. Pierre-Pierre teaches us by his accomplishments, that once you understand your purpose in life, once you capture the vision of how you can materialize your dreams, commit your plans to God and surround yourself with people that are for you, you will succeed.",
+      ],
     },
     {
       name: 'Michel Celestin',
@@ -102,6 +107,7 @@ const renderTeam = () => {
         facebook: 'https://www.facebook.com/michel.celestin.1',
       },
       image: TeamImage2,
+      bio: [''],
     },
     {
       name: 'Sophie Chery Pierre Pierre',
@@ -110,6 +116,11 @@ const renderTeam = () => {
         facebook: 'https://www.facebook.com/sophiecpp',
       },
       image: TeamImage1,
+      bio: [
+        "Sophie Chery Pierre-Pierre is a Nurse Practitioner, a loving and devoted mother and wife.  She was born in Haiti and moved to the United States at the age of 12.  She is an advocate and a voice for the underserved and the elderly population of all racial background.",
+        "A product of Boston public schools, Sophie Chery studied nursing at the University of Massachusetts Boston. After completing her BSN She joined the staff at Arbour Hospital, then accepted a nursing staff position at Boston Medical Center.",
+        "After a few years working as a nurse she wanted to do more to help others.  Her passion led her to obtain a master’s degree and became a Nurse Practitioner.  She is very passionate about what she does with the underserved and elderly population and has become a voice throughout the HouseCalls program.",
+      ],
     },
   ];
 
@@ -137,7 +148,7 @@ const renderTeam = () => {
       return (
         <div key={i} className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src={member.image} alt="" />
+            <a href={'#teamModal-' + i} data-toggle="modal"><img className="mx-auto rounded-circle" src={member.image} alt="" /></a>
             <h6>{member.name}</h6>
             <p className="text-muted">{member.position}</p>
             <ul className="list-inline social-buttons">
@@ -156,6 +167,32 @@ const renderTeam = () => {
                 })
               }
             </ul>
+          </div>
+          <div class="portfolio-modal modal fade" id={"teamModal-" + i} tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div class="modal-body">
+                        <h3 class="text-uppercase">{member.name}</h3>
+                        <p class="item-intro text-muted">{member.position}</p>
+                        <img width={200} class="img-fluid d-block mx-auto" src={member.image} alt=""/>
+                        { member.bio.map(paragraph => <p>{paragraph}</p>) }
+                        <button class="btn btn-primary" data-dismiss="modal" type="button">
+                          <i class="fas fa-times"></i> Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       );
@@ -336,7 +373,7 @@ export default () => {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <p className="large text-muted">If you would like to get involved, please feel free to reach out by email or send us a message on facebook.</p>
+              <p className="large text-muted">If you would like to get involved, please feel free to send us a message on facebook.</p>
             </div>
           </div>
         </div>
