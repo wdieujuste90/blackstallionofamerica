@@ -19,16 +19,11 @@ export default () => (
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#about">About Us</a>
                     </li>
-
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#community">Community</a>
                     </li>
-
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#events">Events</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#contribute">Contribute</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link js-scroll-trigger" href="#team">Our Team</a>

@@ -21,15 +21,7 @@ import TeamImage3 from './assets/images/docheadshot.jpg'
 
 import galaPhotos from './assets/images/events';
 import jacques1 from './assets/images/events/jacques1.jpg';
-import { SSL_OP_CIPHER_SERVER_PREFERENCE } from 'constants';
 const CarouselImageHeight = 1200;
-
-// const galleryEventPhotos = EventImages.map(image => ({
-//   src: image,
-//   width: 3,
-//   height: 2,
-// }));
-
 
 const carouselData = [
   {
@@ -45,6 +37,130 @@ const carouselData = [
     caption: { header: "Our Goal", body: "Create advocacy opportunities on issues of bullying and cyberbullying" },
   },
 ];
+
+const renderContactSection = () => (
+  <section className="page-section" id="contact">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h2 className="section-heading text-uppercase">Contact Us</h2>
+            <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <form id="contactForm" name="sentMessage" noValidate="novalidate">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input className="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                  <div className="form-group">
+                    <input className="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                  <div className="form-group">
+                    <input className="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <textarea className="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                    <p className="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div className="clearfix"></div>
+                <div className="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+);
+
+const renderTeam = () => {
+  const teamData = [
+    {
+      name: 'Gracia Martin Pierre-Pierre',
+      position: 'President',
+      social: {
+        facebook: 'https://www.facebook.com/jacques.pierrepierre',
+      },
+      image: TeamImage3,
+    },
+    {
+      name: 'Michel Celestin',
+      position: 'Vice President',
+      social: {
+        facebook: 'https://www.facebook.com/michel.celestin.1',
+      },
+      image: TeamImage2,
+    },
+    {
+      name: 'Sophie Chery Pierre Pierre',
+      position: 'Treasury and Marketing',
+      social: {
+        facebook: 'https://www.facebook.com/sophiecpp',
+      },
+      image: TeamImage1,
+    },
+  ];
+
+  const socialLinks = [
+    {
+      key: 'email',
+      icon: '',
+    },
+    {
+      key: 'facebook',
+      icon: 'fa-facebook-f',
+    },
+    {
+      key: 'twitter',
+      icon: 'fa-twitter',
+    },
+    {
+      key: 'linkedin',
+      icon: 'fa-linkedin-in',
+    },
+  ];
+
+  return (
+    teamData.map((member, i) => {
+      return (
+        <div key={i} className="col-sm-4">
+          <div className="team-member">
+            <img className="mx-auto rounded-circle" src={member.image} alt="" />
+            <h6>{member.name}</h6>
+            <p className="text-muted">{member.position}</p>
+            <ul className="list-inline social-buttons">
+              {
+                socialLinks.map((link, j) => {
+                  if (member.social[link.key]) {
+                    return (
+                      <li key={j} className="list-inline-item">
+                        <a rel="noopener noreferrer" target="_blank" href={member.social[link.key]}>
+                          <i className={'fab ' + link.icon}></i>
+                        </a>
+                      </li>
+                    );
+                  }
+                  return null;
+                })
+              }
+            </ul>
+          </div>
+        </div>
+      );
+    })
+  );
+};
 
 export default () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -215,127 +331,11 @@ export default () => {
               </div>
           </div>
           <div className="row">
-            <div className="col-sm-4">
-              <div className="team-member">
-                <img className="mx-auto rounded-circle" src={TeamImage3} alt="" />
-                <h6>Gracia Martin Pierre-Pierre</h6>
-                <p className="text-muted">President</p>
-                <ul className="list-inline social-buttons">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="team-member">
-                <img className="mx-auto rounded-circle" src={TeamImage2} alt="" />
-                <h6>Michel Celestin</h6>
-                <p className="text-muted">Vice President</p>
-                <ul className="list-inline social-buttons">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="team-member">
-                <img className="mx-auto rounded-circle" src={TeamImage1} alt="" />
-                <h6>Sophie Chery Pierre Pierre</h6>
-                <p className="text-muted">Treasury and Marketing</p>
-                <ul className="list-inline social-buttons">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            { renderTeam() }
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section className="page-section" id="contact">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Contact Us</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <form id="contactForm" name="sentMessage" noValidate="novalidate">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input className="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                    <div className="form-group">
-                      <input className="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                    <div className="form-group">
-                      <input className="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <textarea className="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="clearfix"></div>
-                  <div className="col-lg-12 text-center">
-                    <div id="success"></div>
-                    <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
+              <p className="large text-muted">If you would like to get involved, please feel free to reach out by email or send us a message on facebook.</p>
             </div>
           </div>
         </div>
@@ -346,34 +346,12 @@ export default () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4">
-              <span className="copyright">Copyright &copy; Your Website 2019</span>
+              <span className="copyright">Copyright &copy; Black Stallion Corp</span>
             </div>
-            <div className="col-md-4">
-              <ul className="list-inline social-buttons">
-                <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-md-4">
+            <div className="offset-md-4 col-md-4">
               <ul className="list-inline quicklinks">
                 <li className="list-inline-item">
                   <a href="#">Privacy Policy</a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#">Terms of Use</a>
                 </li>
               </ul>
             </div>
