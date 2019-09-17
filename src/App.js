@@ -21,7 +21,7 @@ import TeamImage3 from './assets/images/docheadshot.jpg'
 
 import galaPhotos from './assets/images/events';
 import jacques1 from './assets/images/events/jacques1.jpg';
-import { SSL_OP_CIPHER_SERVER_PREFERENCE } from 'constants';
+
 const CarouselImageHeight = 1200;
 
 // const galleryEventPhotos = EventImages.map(image => ({
