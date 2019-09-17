@@ -15,8 +15,13 @@ import AboutImage2 from './assets/images/teacher.jpg';
 import AboutImage3 from './assets/images/communityhands.jpg';
 import AboutImage4 from './assets/images/teens.jpg';
 
+import TeamImage1 from './assets/images/sophie.jpg';
+import TeamImage2 from './assets/images/michel.jpg'
+import TeamImage3 from './assets/images/docheadshot.jpg'
+
 import galaPhotos from './assets/images/events';
 import jacques1 from './assets/images/events/jacques1.jpg';
+import { SSL_OP_CIPHER_SERVER_PREFERENCE } from 'constants';
 const CarouselImageHeight = 1200;
 
 // const galleryEventPhotos = EventImages.map(image => ({
@@ -207,13 +212,12 @@ export default () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase">Our Amazing Team</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
+              </div>
           </div>
           <div className="row">
             <div className="col-sm-4">
               <div className="team-member">
-                <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt="" />
+                <img className="mx-auto rounded-circle" src={TeamImage3} alt="" />
                 <h6>Gracia Martin Pierre-Pierre</h6>
                 <p className="text-muted">President</p>
                 <ul className="list-inline social-buttons">
@@ -237,7 +241,7 @@ export default () => {
             </div>
             <div className="col-sm-4">
               <div className="team-member">
-                <img className="mx-auto rounded-circle" src="img/team/2.jpg" alt="" />
+                <img className="mx-auto rounded-circle" src={TeamImage2} alt="" />
                 <h6>Michel Celestin</h6>
                 <p className="text-muted">Vice President</p>
                 <ul className="list-inline social-buttons">
@@ -261,7 +265,7 @@ export default () => {
             </div>
             <div className="col-sm-4">
               <div className="team-member">
-                <img className="mx-auto rounded-circle" src="img/team/3.jpg" alt="" />
+                <img className="mx-auto rounded-circle" src={TeamImage1} alt="" />
                 <h6>Sophie Chery Pierre Pierre</h6>
                 <p className="text-muted">Treasury and Marketing</p>
                 <ul className="list-inline social-buttons">
