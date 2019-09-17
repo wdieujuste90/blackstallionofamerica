@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c442deb5b81e57b5752d2238125f5937",
+    "revision": "ed0148485a92f78c07010ecb5fd18142",
     "url": "/blackstallionofamerica/index.html"
   },
   {
-    "revision": "5fb49dd47106ec0137af",
+    "revision": "895c28d8973d4bac76ec",
     "url": "/blackstallionofamerica/static/css/main.49bae6d5.chunk.css"
   },
   {
-    "revision": "594d02b342790e027133",
-    "url": "/blackstallionofamerica/static/js/2.35ebcfe3.chunk.js"
+    "revision": "17bb05072f778efb4f2c",
+    "url": "/blackstallionofamerica/static/js/2.7fca8c35.chunk.js"
   },
   {
-    "revision": "5fb49dd47106ec0137af",
-    "url": "/blackstallionofamerica/static/js/main.7992d0ae.chunk.js"
+    "revision": "895c28d8973d4bac76ec",
+    "url": "/blackstallionofamerica/static/js/main.def01c94.chunk.js"
   },
   {
     "revision": "4bd2e8fab7e3b78c8996",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "27f7c4fe1895342d40966104f6d9ab12",
     "url": "/blackstallionofamerica/static/media/communityhands.27f7c4fe.jpg"
+  },
+  {
+    "revision": "0e1f4ae27cf1900a428cf91483bb7ec7",
+    "url": "/blackstallionofamerica/static/media/docheadshot.0e1f4ae2.jpg"
   },
   {
     "revision": "44ca1f1807d356ee0afbc5ff906ece48",
@@ -180,12 +184,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blackstallionofamerica/static/media/men2.0c2db581.jpg"
   },
   {
+    "revision": "65a44a95da93bd7f8bf4ef08e41f1853",
+    "url": "/blackstallionofamerica/static/media/michel.65a44a95.jpg"
+  },
+  {
     "revision": "633e0e27d6905a1dd2bd6e080b7c45b4",
     "url": "/blackstallionofamerica/static/media/motherandbaby.633e0e27.jpg"
   },
   {
     "revision": "b661891ba3b2097c270b1670416256c7",
     "url": "/blackstallionofamerica/static/media/motherandkid.b661891b.jpg"
+  },
+  {
+    "revision": "d0c18cf4adef86cd914217b7888b1383",
+    "url": "/blackstallionofamerica/static/media/sophie.d0c18cf4.jpg"
   },
   {
     "revision": "dd776a25a6da8d5f1ba2b45b536b5534",
