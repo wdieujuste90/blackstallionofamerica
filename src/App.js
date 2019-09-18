@@ -94,7 +94,7 @@ const renderTeam = () => {
         facebook: 'https://www.facebook.com/jacques.pierrepierre',
       },
       image: TeamImage3,
-      bio: ["Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believed that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
+      bio: ["Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believes that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
       "He also is a loving husband that loves and cherishes his wife over everything else in life. A concerned father that is loving his kids into well-adjusted adults. An attentive son that is making sure that his parents know how much he loves them and is appreciative of all the sacrifices that they made so he could have the best chances at succeeding in life.",
       "A man of integrity, of character that believes that kids are the future of a nation and that it is unacceptable to lose them to suicide due to depression brought about by bullying.",
       "Finally but not the least, Dr. Pierre-Pierre teaches us by his accomplishments, that once you understand your purpose in life, once you capture the vision of how you can materialize your dreams, commit your plans to God and surround yourself with people that are for you, you will succeed.",
