@@ -91,7 +91,7 @@ const renderTeam = () => {
       name: 'Gracia Martin Pierre-Pierre',
       position: 'President',
       social: {
-        facebook: 'https://www.facebook.com/jacques.pierrepierre',
+        //facebook: '',
       },
       image: TeamImage3,
       bio: ["Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believes that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
@@ -104,7 +104,7 @@ const renderTeam = () => {
       name: 'Michel Celestin',
       position: 'Vice President',
       social: {
-        facebook: 'https://www.facebook.com/michel.celestin.1',
+        //facebook: '',
       },
       image: TeamImage2,
       bio: [''],
@@ -113,7 +113,7 @@ const renderTeam = () => {
       name: 'Sophie Chery Pierre Pierre',
       position: 'Treasury and Marketing',
       social: {
-        facebook: 'https://www.facebook.com/sophiecpp',
+        //facebook: '',
       },
       image: TeamImage1,
       bio: [
