@@ -6,7 +6,7 @@ import Image from '../common/Image';
 export default () => (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top className-fluid" id="mainNav">
         <div className="container">
-            <a style={{ marginLeft: 485 }} className="navbar-brand js-scroll-trigger" href="#page-top">
+            <a className="navbar-brand js-scroll-trigger" href="#page-top">
                 <Image width={145} src={Logo} />
             </a>
 
