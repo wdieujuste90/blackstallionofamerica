@@ -23,6 +23,7 @@ import galaPhotos from './assets/images/events';
 import jacques1 from './assets/images/events/jacques1.jpg';
 
 const CarouselImageHeight = 1200;
+const BlackStallionFacebookUrl = "https://www.facebook.com/pg/Black-Stallion-of-America-Corp-120170706045204/about/?ref=page_internal";
 
 const carouselData = [
   {
@@ -380,7 +381,7 @@ export default () => {
           </div>
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
-              <p className="large text-muted">If you would like to get involved, please feel free to send us a message on facebook.</p>
+              <p className="large text-muted">If you would like to get involved, please feel free to send us a message on <a target="_blank" href={BlackStallionFacebookUrl}>facebook</a></p>
             </div>
           </div>
         </div>
@@ -393,10 +394,12 @@ export default () => {
             <div className="col-md-4">
               <span className="copyright">Copyright &copy; Black Stallion Corp</span>
             </div>
-            <div className="offset-md-4 col-md-4">
-              <ul className="list-inline quicklinks">
+            <div className="col-md-4">
+              <ul className="list-inline social-buttons">
                 <li className="list-inline-item">
-                  <a href="#">Privacy Policy</a>
+                  <a href={BlackStallionFacebookUrl}>
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
                 </li>
               </ul>
             </div>

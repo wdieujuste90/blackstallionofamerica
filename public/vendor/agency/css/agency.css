@@ -16,11 +16,11 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: rgb(233, 103, 43);
 }
 
 a:hover {
-  color: #fec503;
+  color: rgb(233, 103, 43);
 }
 
 .text-primary {
