@@ -94,10 +94,11 @@ const renderTeam = () => {
         //facebook: '',
       },
       image: TeamImage3,
-      bio: ["Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believes that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
-      "He also is a loving husband that loves and cherishes his wife over everything else in life. A concerned father that is loving his kids into well-adjusted adults. An attentive son that is making sure that his parents know how much he loves them and is appreciative of all the sacrifices that they made so he could have the best chances at succeeding in life.",
-      "A man of integrity, of character that believes that kids are the future of a nation and that it is unacceptable to lose them to suicide due to depression brought about by bullying.",
-      "Finally but not the least, Dr. Pierre-Pierre teaches us by his accomplishments, that once you understand your purpose in life, once you capture the vision of how you can materialize your dreams, commit your plans to God and surround yourself with people that are for you, you will succeed.",
+      bio: [
+        "Gracia Martin Jacques-Richard Pierre-Pierre is a man after God’s own heart. He is compassionate, always available to elevate people’s spirit. He is a go getter, a no nonsense guy, a man with principles and values that believes that inside every human being there is a leader and that everybody has the right and the duty to share their God-given gift with the world.",
+        "He also is a loving husband that loves and cherishes his wife over everything else in life. A concerned father that is loving his kids into well-adjusted adults. An attentive son that is making sure that his parents know how much he loves them and is appreciative of all the sacrifices that they made so he could have the best chances at succeeding in life.",
+        "A man of integrity, of character that believes that kids are the future of a nation and that it is unacceptable to lose them to suicide due to depression brought about by bullying.",
+        "Finally but not the least, Dr. Pierre-Pierre teaches us by his accomplishments, that once you understand your purpose in life, once you capture the vision of how you can materialize your dreams, commit your plans to God and surround yourself with people that are for you, you will succeed.",
       ],
     },
     {
@@ -107,7 +108,13 @@ const renderTeam = () => {
         //facebook: '',
       },
       image: TeamImage2,
-      bio: [''],
+      bio: [
+        "Michel Junior Celestin is a blessed, humble, and empathetic servant-leader. His priorities are straightforward: Faith, Family, and Country. He is a strong believer that we all have agency; therefore, he does not seek to empower anyone. Michel strives to disseminate knowledge and provide others with the necessary tools to empower themselves.",
+        "Michel is a proud father and a grateful son. His dedication to fulfilling the responsibilities inherent in those roles is unwavering.",
+        "Michel is a Clinical Psychologist who specializes in trauma-related care for both military and civilian patients. He agrees with the scientific community that childhood traumatic experiences such as bullying, in its various forms, can significantly impact adolescents’ psychological well-being and future adjustment to life stressors.",
+        "Garcia and Michel can attest from both personal and professional perspectives that unresolved trauma from bullying and their associated compensatory maladaptive coping can lead to an array of behavioral and emotional difficulties in the future without timely and appropriate interventions.",
+        "Embodying the quintessential strengths of a black stallion with a heavy focus on resilience and assertiveness are among the core objectives of this movement. Join us and let’s free the dormant stallion within you!"
+      ],
     },
     {
       name: 'Sophie Chery Pierre Pierre',
