@@ -19,8 +19,10 @@ import TeamImage1 from './assets/images/sophie.jpg';
 import TeamImage2 from './assets/images/michel.jpg'
 import TeamImage3 from './assets/images/docheadshot.jpg'
 
-import galaPhotos from './assets/images/events';
-import jacques1 from './assets/images/events/jacques1.jpg';
+import galaPhotos from './assets/images/events/gala';
+import jacques1 from './assets/images/events/gala/jacques1.jpg';
+import boysngirlclubphotos from './assets/images/events/boysngirlsclub/pierreselfie.jpg';
+
 
 const CarouselImageHeight = 1200;
 const BlackStallionFacebookUrl = "https://www.facebook.com/pg/Black-Stallion-of-America-Corp-120170706045204/about/?ref=page_internal";
@@ -360,13 +362,32 @@ export default () => {
             </div>
           </div>
         </div>
+        <br></br>
+        <div style={{marginTop: 10 }} className="container">
+          <div className="row">
+          
+            <div className="col-md-8 col-sm-6">
+              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h5 className="text-muted text-left">Black Stallion of America Corp Launch Gala - July 2019</h5></a>
+              <p className="text-left">Check out our Black Stallion of America Corp Gala pictures where we launched our non-for-profit organization and introduce our vision to friends, family and the community!</p>
 
+            </div>
+            <div className="col-md-4 col-sm-6">
+              <img height={300} alt="" className="rounded" src={pierreselfie}></img>
+            </div>
+          </div>
+        </div>
       </section>
 
       <ReactBnbGallery
         show={showGallery}
         photos={galaPhotos}
         onClose={() => setShowGallery(!showGallery)} />
+      
+      <ReactBnbGallery
+        show={showGallery}
+        photos={boysngirlclubphotos}
+        onClose={() => setShowGallery(!showGallery)} />
+          
 
       {/* Team */}
       <section className="bg-light page-section" id="team">
