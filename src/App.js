@@ -21,8 +21,9 @@ import TeamImage3 from './assets/images/docheadshot.jpg'
 
 import galaPhotos from './assets/images/events/gala';
 import jacques1 from './assets/images/events/gala/jacques1.jpg';
-import pierreselfie from './assets/images/events/BoysGirlsClub/pierreself.jpg';
 import boysngirlclubphotos from './assets/images/events/BoysGirlsClub';
+import pierreselfie from './assets/images/events/BoysGirlsClub/pierreselfie.jpg';
+
 
 
 const CarouselImageHeight = 1200;
