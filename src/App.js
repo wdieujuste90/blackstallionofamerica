@@ -369,7 +369,7 @@ export default () => {
           <div className="row">
           
             <div className="col-md-8 col-sm-6">
-              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h5 className="text-muted text-left">Black Stallion of America Corp Launch Gala - July 2019</h5></a>
+              <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h5 className="text-muted text-left">Boys And Girls Club - 2020</h5></a>
               <p className="text-left">Check out our Black Stallion of America Corp Gala pictures where we launched our non-for-profit organization and introduce our vision to friends, family and the community!</p>
 
             </div>
