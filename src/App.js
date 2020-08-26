@@ -370,7 +370,7 @@ export default () => {
           
             <div className="col-md-8 col-sm-6">
               <a href='javascript:void(0)'onClick={() => setShowGallery(!showGallery)}><h5 className="text-muted text-left">Boys And Girls Club - 2020</h5></a>
-              <p className="text-left">Check out our Black Stallion youths at our local Boys and Girls Club learning Respect, Discipline, Self Confidence, Humility and Self Defence through Martial Arts - Shotokan Karate!</p>
+              <p className="text-left">Check out our Black Stallion youths at our local Boys and Girls Club learning Respect, Discipline, Self Confidence, Humility and Self Defense through Martial Arts - Shotokan Karate!</p>
 
             </div>
             <div className="col-md-4 col-sm-6">
