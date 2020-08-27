@@ -21,6 +21,9 @@ import trophypic2 from './trophypic2.jpg';
 
 const images = [
     {
+        photo: pierreselfie,
+    },
+    {
         photo: boyngirlsclubpic,
     },
     {
@@ -65,9 +68,7 @@ const images = [
     {
         photo: pierreself,
     },
-    {
-        photo: pierreselfie,
-    },
+    
     {
         photo: pierreselfie2,
     },
